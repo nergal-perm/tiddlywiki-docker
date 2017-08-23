@@ -9,8 +9,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Setup wiki volume
-VOLUME /var/lib/tiddlywiki
-WORKDIR /var/lib/tiddlywiki
+WORKDIR /tiddlywiki
 
 # Add init-and-run script
 ADD init-and-run-wiki /usr/local/bin/init-and-run-wiki
